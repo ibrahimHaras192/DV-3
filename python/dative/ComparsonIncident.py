@@ -2,6 +2,7 @@ import pandas as pd
 import plotly.graph_objects as go
 
 #Which airline is developing and learning from mistakes?
+#Which airline is safest?
 '''
 'airline', 'avail_seat_km_per_week', 'incidents_85_99',
        'fatal_accidents_85_99', 'fatalities_85_99', 'incidents_00_14',

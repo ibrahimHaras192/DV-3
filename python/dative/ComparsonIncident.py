@@ -2,7 +2,8 @@ import pandas as pd
 import plotly.graph_objects as go
 
 #Which airline is developing and learning from mistakes?
-#Which airline is safest?
+#Which airline is safer?
+#comperson incident 85 99
 '''
 'airline', 'avail_seat_km_per_week', 'incidents_85_99',
        'fatal_accidents_85_99', 'fatalities_85_99', 'incidents_00_14',
@@ -15,11 +16,13 @@ fig = go.Figure()
 
 fig.add_trace(go.Scatter(x=df['airline'], y=df['incidents_85_99'],
                     mode='lines+markers',
-                    name='incidents 1985-1999'))
+                    name='incidents 1985-1999',
+                         fill='tonexty'))
 
 fig.add_trace(go.Scatter(x=df['airline'], y=df['incidents_00_14'],
                     mode='lines+markers',
-                    name='incidents 2000-2014'))
+                    name='incidents 2000-2014',
+                         fill='tozeroy'))
 
 fig.update_layout(title='comparson incident',
                    xaxis_title='airline',

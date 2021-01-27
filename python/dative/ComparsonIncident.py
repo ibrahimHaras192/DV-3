@@ -1,3 +1,4 @@
+#import packages
 import chart_studio
 import chart_studio.plotly as py
 import chart_studio.tools as tls
@@ -9,16 +10,14 @@ import plotly.graph_objects as go
 #Which airline is developing and learning from mistakes?
 #Which airline is safer?
 #comperson incident 85 99
-'''
-'airline', 'avail_seat_km_per_week', 'incidents_85_99',
-       'fatal_accidents_85_99', 'fatalities_85_99', 'incidents_00_14',
-       'fatal_accidents_00_14', 'fatalities_00_14'
-       '''
 
+# user name and password for plotly account
 #username ='Ibrahim19'
 #api_key = 'FV0hzcNOk1z9U8wXOvNy'
 
 #chart_studio.tools.set_credentials_file(username=username, api_key=api_key)
+
+#read CSV
 df = pd.read_csv("/Users/ibrahimharas/Documents/DV-3/dataset/airline-safety/airline-safety.csv")
 
 fig = go.Figure()

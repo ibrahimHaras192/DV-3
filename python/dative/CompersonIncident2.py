@@ -1,3 +1,4 @@
+#import packages
 import pandas as pd
 import chart_studio
 import chart_studio
@@ -6,17 +7,14 @@ import plotly.graph_objects as go
 import plotly.graph_objects as px
 import plotly.express as px
 #which airline is the safest copmaring with seat km per week?
-'''
-'airline', 'avail_seat_km_per_week', 'incidents_85_99',
-       'fatal_accidents_85_99', 'fatalities_85_99', 'incidents_00_14',
-       'fatal_accidents_00_14', 'fatalities_00_14'
-       '''
+
+
 #username ='Ibrahim19'
 #api_key = 'FV0hzcNOk1z9U8wXOvNy'
 
 #chart_studio.tools.set_credentials_file(username=username, api_key=api_key)
-df = pd.read_csv("/Users/ibrahimharas/Documents/DV-3/dataset/airline-safety/airline-safety.csv")
 
+# Read CSV
 df = pd.read_csv("/Users/ibrahimharas/Documents/DV-3/dataset/airline-safety/airline-safety.csv")
 
 

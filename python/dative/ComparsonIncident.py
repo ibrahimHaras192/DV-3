@@ -1,5 +1,10 @@
+import chart_studio
+import chart_studio.plotly as py
+import chart_studio.tools as tls
 import pandas as pd
 import plotly.graph_objects as go
+
+
 
 #Which airline is developing and learning from mistakes?
 #Which airline is safer?
@@ -10,6 +15,10 @@ import plotly.graph_objects as go
        'fatal_accidents_00_14', 'fatalities_00_14'
        '''
 
+#username ='Ibrahim19'
+#api_key = 'FV0hzcNOk1z9U8wXOvNy'
+
+#chart_studio.tools.set_credentials_file(username=username, api_key=api_key)
 df = pd.read_csv("/Users/ibrahimharas/Documents/DV-3/dataset/airline-safety/airline-safety.csv")
 
 fig = go.Figure()
@@ -28,3 +37,5 @@ fig.update_layout(title='comparson incident',
                    xaxis_title='airline',
                    yaxis_title='incidents')
 fig.show()
+
+#py.plot(fig, filename='Comperson incident', auto_open=True)
